@@ -1,0 +1,8 @@
+[
+  {
+    "id": "playlist1",
+    "name": "playlist 1",
+    "songs": ["downbad", "surroundsound"]
+  },
+  { "id": "newname", "name": "new name", "songs": ["downbad", "surroundsound"] }
+]

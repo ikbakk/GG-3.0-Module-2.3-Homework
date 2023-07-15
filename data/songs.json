@@ -1,0 +1,16 @@
+[
+  {
+    "id": "downbad",
+    "title": "down bad",
+    "artist": "dreamville",
+    "url": "./src/assets/audio/downbad.mp3",
+    "totalPlayCount": 2
+  },
+  {
+    "id": "surroundsound",
+    "title": "surround sound",
+    "artist": "jid",
+    "url": "/src/assets/audio/surroundsound.mp3",
+    "totalPlayCount": 0
+  }
+]

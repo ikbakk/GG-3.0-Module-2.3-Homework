@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "82dfc699-2ab1-4565-85dc-38d8aed677b3",
+		"name": "Modul 2.3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26684675"
+	},
+	"item": [
+		{
+			"name": "Get All songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/songs",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get song detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/songs/downbad",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						"downbad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get url for play the song",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/songs/downbad/play",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						"downbad",
+						"play"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all playlists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/playlists",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get playlist detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/playlists/playlist1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"playlists",
+						"playlist1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get songs in specific playlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/playlists/playlist1/songs",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"playlists",
+						"playlist1",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get songs in playlist (Most)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/playlists/playlist1/songs?sortByCount=most-played",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"playlists",
+						"playlist1",
+						"songs"
+					],
+					"query": [
+						{
+							"key": "sortByCount",
+							"value": "most-played"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get songs in playlist (Least)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/playlists/playlist1/songs?sortByCount=desc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"playlists",
+						"playlist1",
+						"songs"
+					],
+					"query": [
+						{
+							"key": "sortByCount",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add song to specific playlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playlistId\": \"newname\",\r\n    \"songId\": \"surroundsound\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/playlists/addSong",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"playlists",
+						"addSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create playlist as a model",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"playlist2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/playlists/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"playlists",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
